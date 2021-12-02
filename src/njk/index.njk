@@ -1,0 +1,22 @@
+{% extends '_templates/base.njk' %}
+
+{% block page_title %}Index page title{% endblock %}
+
+{% block page_description %}The index search description for this page goes here.{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h1>UT Austin Community Galleries</h1>
+  <p>This site is meant to showcase the beautiful UT Austin campus</p>
+  <h2>UT Campus Images loop</h2>
+  <p>EXPLORE OUR GALLERIES!</p>
+  <div class="row">
+    {% for utimage in utimages.utimages %}
+      <div class="col">
+        <img src="img/{{ utimage.slug }}.jpg" alt="" class="img-fluid">
+        <h3><a href="utimages/{{ utimage.slug }}.html">{{ utimage.name }}</a></h3>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
