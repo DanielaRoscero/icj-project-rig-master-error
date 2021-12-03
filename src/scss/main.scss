@@ -41,7 +41,7 @@ body{
   color: #ffffff;
 }
 #title{
-  font-size: 80px;
+  font-size: 50px;
   font-family: Bebas Neue;
   color: white;
   border-bottom: white;
@@ -50,8 +50,8 @@ body{
   border-bottom-width: 10px;
   padding-bottom: 10px;
 }
-h1{
-  font-size: 80px;
+h2{
+  font-size: 30px;
   font-family: Bebas Neue;
   border-bottom: white;
   border-bottom-style: solid;
@@ -60,4 +60,10 @@ h1{
   font-size: 30px;
   font-family: Bebas Neue;
   color: white;
+}
+p{
+  font-size: 30px;
+  font-family: Bebas Neue;
+  border-bottom: white;
+  border-bottom-style: solid;
 }
